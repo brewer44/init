@@ -28,7 +28,7 @@ dev_pkgs="firefox git gitnote go jq node oniguruma openjdk openssl@1.1 python@3.
 kube_pkgs="helm kubernetes-helm rke rancher-cli"
 docker_pkgs="docker docker-completion"
 tools_pkgs="agedu csvkit fping lynx mysql-client nmap spectacle telnet vault watch wget"
-brew_per_pkgs="bash_completion discord keybase mpdecimal signal spotify tcl-tk tree wtf wtfutil xz youtube-dl youtube-to-mp3"
+brew_per_pkgs="bash_completion discord keybase mpdecimal signal spotify tcl-tk tree wtf wtfutil xz youtube-downloader youtube-to-mp3 little-snitch"
 retired="vivaldi lens"
 
 echo "Installing Dev packages"
