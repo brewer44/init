@@ -9,11 +9,12 @@ brew install --cask clipy
 brew install --cask spectacle
 investigate_pkgs="ack" 
 libs_pkgs="gettext gdbm icu4c id3lib libidn2 libunistring ncurses pcre2 readline wimlib"
-dev_pkgs="firefox git gitnote go jq node oniguruma openjdk openssl@1.1 python@3.9 sqlite vagrant vivaldi vagrant-completion visual-studio-code"
+dev_pkgs="firefox git gitnote go jq node oniguruma openjdk openssl@1.1 python@3.9 sqlite vagrant vagrant-completion visual-studio-code"
 kube_pkgs="helm kubernetes-helm rke rancher-cli"
 docker_pkgs="docker docker-completion"
 tools_pkgs="agedu csvkit fping lynx mysql-client nmap spectacle telnet vault watch wget"
-brew_per_pkgs="bash_completion discord keybase lens mpdecimal signal spotify tcl-tk tree wtf wtfutil xz youtube-dl youtube-to-mp3"
+brew_per_pkgs="bash_completion discord keybase mpdecimal signal spotify tcl-tk tree wtf wtfutil xz youtube-dl youtube-to-mp3"
+retired="vivaldi lens"
 
 echo "Installing Dev packages"
 for itr in $(echo $dev_pkgs); do
@@ -43,4 +44,13 @@ done
 #echo ""
 
 echo "Grabbing bash_profile"
-#TODO: 
+wget https://raw.githubusercontent.com/brewer44/init/main/bash_profile > ~/.bash_profile
+
+echo "Setting up Personal extra dirs"
+mkdir ~/git
+mkdir ~/sandbox
+
+#TODO: auto make up k8s config?
+
+#TODO: auto pull down standard ssh config?
+
