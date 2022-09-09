@@ -4,6 +4,21 @@
 # Version:
 #   1.0:May 12 2021: Inital script creation. 
 
+#get os version
+#OS=""
+#if [ /usr/bin/sw_vers ]; do
+#    OS="MAC"
+#elif [ cat /etc/redhat-release ]; do 
+#    OS="RHEL"
+#fi
+
+#for linux
+
+# for macos
+#homebrew install 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+
 brew install --cask iterm2
 brew install --cask clipy
 brew install --cask spectacle
